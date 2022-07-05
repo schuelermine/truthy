@@ -59,7 +59,7 @@ instance (Foldable f, Boolean x) => Truthy (AllTrue f x) where
   type BooleanRep (AllTrue f x) = x
   truthy (AllTrue xs) = foldr (&&*) true xs
 
--- | A wrapper for 'Foldable' data structures that 'truthy' evaluates by '(&&*)'-ing all elements’ boolean representation
+-- | A wrapper for 'Foldable' data structures that 'truthy' evaluates by '(&&*)'-ing all elements’ boolean representations
 newtype AllTruthy f x = AllTruthy { unAllTruthy :: f x } deriving (Show, Eq, Ord, Functor, Foldable, Traversable)
 
 instance (Functor f, Foldable f, Truthy x) => Truthy (AllTruthy f x) where
@@ -73,7 +73,7 @@ instance (Foldable f, Boolean x) => Truthy (AnyTrue f x) where
   type BooleanRep (AnyTrue f x) = x
   truthy (AnyTrue xs) = foldr (||*) false xs
 
--- | A wrapper for 'Foldable' data structures that 'truthy' evaluates by '(||*)'-ing all elements’ boolean representation
+-- | A wrapper for 'Foldable' data structures that 'truthy' evaluates by '(||*)'-ing all elements’ boolean representations
 newtype AnyTruthy f x = AnyTruthy { unAnyTruthy :: f x } deriving (Show, Eq, Ord, Functor, Foldable, Traversable)
 
 instance (Functor f, Foldable f, Truthy x) => Truthy (AnyTruthy f x) where

@@ -1,6 +1,6 @@
 cabal-version:      3.0
 name:               truthy
-version:            0.3.0.0
+version:            0.3.0.1
 synopsis:           Generalized booleans and truthy values.
 description:        Generalized booleans and truthy values. See also: Boolean
 homepage:           https://github.com/schuelermine/truthy
@@ -28,4 +28,4 @@ source-repository head
 source-repository this
     type:               git
     location:           https://github.com/schuelermine/truthy.git
-    tag:                0.3.0.0
+    tag:                0.3.0.1

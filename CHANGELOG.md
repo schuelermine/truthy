@@ -1,5 +1,9 @@
 # Revision history for truthy
 
+## 0.3.0.1 -- 2022-07-05
+
+* Fixed a typo
+
 ## 0.3.0.0 -- 2022-07-05
 
 * Undid moving `true` and `false` into a separate class
